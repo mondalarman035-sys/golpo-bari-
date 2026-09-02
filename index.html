@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Golpo Bari - গল্প পড়ার ঘর</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f7f4ef;
+  color:#222;
+}
+
+header{
+  background:linear-gradient(135deg,#5b21b6,#9333ea);
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+}
+
+header h1{
+  font-size:35px;
+}
+
+header p{
+  margin-top:8px;
+}
+
+.search{
+  margin:20px auto 0;
+  max-width:600px;
+  display:flex;
+}
+
+.search input{
+  flex:1;
+  padding:14px;
+  border:0;
+  border-radius:10px 0 0 10px;
+  font-size:16px;
+}
+
+.search button{
+  border:0;
+  padding:14px 20px;
+  background:#111827;
+  color:white;
+  border-radius:0 10px 10px 0;
+}
+
+.container{
+  max-width:1100px;
+  margin:30px auto;
+  padding:15px;
+}
+
+h2{
+  margin-bottom:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:22px;
+  border-radius:16px;
+  box-shadow:0 4px 15px #ddd;
+}
+
+.emoji{
+  font-size:45px;
+}
+
+.card h3{
+  margin:12px 0;
+}
+
+.card p{
+  color:#666;
+  line-height:1.6;
+}
+
+.read{
+  display:inline-block;
+  margin-top:15px;
+  padding:11px 17px;
+  background:#7c3aed;
+  color:white;
+  text-decoration:none;
+  border-radius:9px;
+}
+
+.story-page{
+  display:none;
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 4px 15px #ddd;
+}
+
+.story-page h2{
+  color:#5b21b6;
+}
+
+.story-text{
+  font-size:18px;
+  line-height:2;
+  white-space:pre-line;
+}
+
+.back{
+  display:inline-block;
+  margin-bottom:20px;
+  color:#7c3aed;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer{
+  margin-top:50px;
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>📖 Golpo Bari</h1>
+<p>প্রতিটি গল্পে একটি নতুন পৃথিবী</p>
+
+<div class="search">
+<input id="search" placeholder="গল্প খুঁজুন...">
+<button onclick="searchStory()">🔍</button>
+</div>
+</header>
+
+<div class="container">
+
+<div id="home">
+
+<h2>🔥 জনপ্রিয় গল্প</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="emoji">👻</div>
+<h3>পুরনো বাড়ির রহস্য</h3>
+<p>গ্রামের শেষ প্রান্তে থাকা পুরনো বাড়িটিকে ঘিরে রয়েছে এক অজানা রহস্য...</p>
+<a class="read" href="#" onclick="openStory('old')">গল্প পড়ুন →</a>
+</div>
+
+<div class="card">
+<div class="emoji">❤️</div>
+<h3>শেষ চিঠি</h3>
+<p>বহু বছর পর পাওয়া একটি চিঠি বদলে দিল একজন মানুষের পুরো জীবন...</p>
+<a class="read" href="#" onclick="openStory('letter')">গল্প পড়ুন →</a>
+</div>
+
+<div class="card">
+<div class="emoji">🕵️</div>
+<h3>হারিয়ে যাওয়া ঘড়ি</h3>
+<p>একটি পুরনো ঘড়ি এবং তার সঙ্গে জড়িয়ে থাকা অদ্ভুত রহস্যের গল্প...</p>
+<a class="read" href="#" onclick="openStory('clock')">গল্প পড়ুন →</a>
+</div>
+
+</div>
+</div>
+
+
+<div id="old" class="story-page">
+
+<a class="back" href="#" onclick="goHome()">← ফিরে যান</a>
+
+<h2>👻 পুরনো বাড়ির রহস্য</h2>
+
+<p class="story-text">
+গ্রামের একদম শেষ প্রান্তে দাঁড়িয়ে ছিল একটি পুরনো বাড়ি।
+
+বাড়িটিকে নিয়ে গ্রামের মানুষের মধ্যে নানা রকম গল্প প্রচলিত ছিল। সন্ধ্যার পর কেউ সেই বাড়ির কাছে যেত না।
+
+একদিন রাহুল নামের এক কিশোর রহস্যটা জানার সিদ্ধান্ত নিল।
+
+রাতের দিকে সে বাড়িটির সামনে পৌঁছাল।
+
+হঠাৎ ভেতর থেকে একটি শব্দ ভেসে এল...
+
+রাহুল দরজার দিকে এগিয়ে গেল।
+
+তারপর কী হলো?
+
+সেটা জানতে হলে পড়তে থাকুন Golpo Bari-এর পরের গল্প।
+</p>
+
+</div>
+
+
+<div id="letter" class="story-page">
+
+<a class="back" href="#" onclick="goHome()">← ফিরে যান</a>
+
+<h2>❤️ শেষ চিঠি</h2>
+
+<p class="story-text">
+পুরনো একটি বাক্স পরিষ্কার করতে গিয়ে অর্ণব একটি চিঠি খুঁজে পেল।
+
+চিঠিটির তারিখ ছিল বহু বছর আগের।
+
+চিঠিটি পড়ার পর অর্ণব বুঝতে পারল, তার পরিবারের সঙ্গে জড়িয়ে আছে এমন একটি ঘটনা যার কথা কেউ কখনো তাকে বলেনি।
+
+চিঠির শেষ লাইনে লেখা ছিল—
+
+“সত্যিটা জানতে হলে পুরনো বাড়িতে ফিরে এসো।”
+
+অর্ণব কি সত্যিটা জানতে পারবে?
+</p>
+
+</div>
+
+
+<div id="clock" class="story-page">
+
+<a class="back" href="#" onclick="goHome()">← ফিরে যান</a>
+
+<h2>🕵️ হারিয়ে যাওয়া ঘড়ি</h2>
+
+<p class="story-text">
+একদিন পুরনো জিনিসের দোকানে একটি অদ্ভুত ঘড়ি পাওয়া গেল।
+
+ঘড়িটির কাঁটা চলত না।
+
+কিন্তু আশ্চর্যের বিষয়, প্রতি রাত বারোটায় ঘড়িটি নিজে থেকেই বেজে উঠত।
+
+ঘড়িটির রহস্য জানতে গিয়ে নীল এমন একটি সত্য আবিষ্কার করল, যা সে কখনো ভাবেনি।
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Golpo Bari 📖
+</footer>
+
+
+<script>
+
+function openStory(id){
+
+document.getElementById("home").style.display="none";
+
+document.querySelectorAll(".story-page").forEach(function(page){
+page.style.display="none";
+});
+
+document.getElementById(id).style.display="block";
+
+window.scrollTo(0,0);
+
+}
+
+function goHome(){
+
+document.querySelectorAll(".story-page").forEach(function(page){
+page.style.display="none";
+});
+
+document.getElementById("home").style.display="block";
+
+window.scrollTo(0,0);
+
+}
+
+function searchStory(){
+
+let text=document.getElementById("search").value.toLowerCase();
+
+document.querySelectorAll(".card").forEach(function(card){
+
+let title=card.querySelector("h3").innerText.toLowerCase();
+
+if(title.includes(text)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
+
+</body>
+</html>to
